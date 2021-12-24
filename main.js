@@ -22,7 +22,7 @@ imageSecondSection.classList.add ('imageSecondSection');
 titleSecond.classList.add ('titleSecond');
 textSecond.classList.add ('textSecond');
 
-imageSecondSection.src = 'media/plane.jpg';
+imageSecondSection.src = 'media/plane.png';
 
 titleSecond.innerHTML = `What are the benefits of traveling?`;
 textSecond.innerHTML = `Travel makes you happier. <br>According to a study says that “waiting for experiences tends to be more positive than waiting for possessions.” And, it goes on to say that “people derive more happiness from the anticipation of experiential purchases and that waiting for an experience tends to be more pleasurable and exciting than waiting to receive a material good”.`;
@@ -42,3 +42,10 @@ thirdDiv.appendChild (thirdButton);
 thirdDiv.classList.add ('thirdDiv');
 thirdTitle.classList.add ('thirdTitle');
 thirdButton.classList.add ('thirdButton');
+
+thirdTitle.innerHTML = `Do you have questions or doubts about how can you start travelling?`;
+thirdButton.innerHTML = `Show more.`;
+
+// ----------------------------------------------------------- FOURTH SECTION -----------------------------------------------------
+
+const fourthSection = document.querySelector ('.fourthSection');
