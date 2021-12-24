@@ -1,4 +1,209 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------------ NAV SECTION --------------------------------------------------- */
+
+.navSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    background-blend-mode: soft-light;
+    background-color: #001820de;
+}
+
+/* ------------ Video section. ------------- */
+
+.videoSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 710px;
+    z-index: -1;
+}
+
+/* ------------ First Part --------------- */
+
+.firstPart {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+.logoSection {
+    border: 1px solid #04ff00;                  /*      Border to delete.      */
+    display: flex;
+}
+
+.imageLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    background-image: url('media/YWB-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 50px;
+}
+
+.informationLogo {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.titleLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin-top: auto;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.descriptionLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin-bottom: auto;
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.titleLogo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.descriptionLogo {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.menuSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+}
+
+.primaryMenu {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    list-style: none;
+    display: flex;
+    margin: auto 35px auto auto;
+}
+
+.primaryMenu li {
+    margin: 10px 50px 10px auto;
+    font-size: 20px;
+}
+
+.primaryMenu li a {
+    color: #ffffff; 
+}
+
+
+/* ------------ Second Part --------------- */
+
+.secondPart {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto auto;
+    height: 300px;
+}
+
+.titleCompany {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: auto auto auto auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.sloganCompany{
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin: auto auto auto auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.exploreMoreButton {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin: auto auto auto auto;
+}
+
+/* ------------------------------------------------------------------------ FIRST SECTION --------------------------------------------------- */
+
+.firstSecion {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.countryTitle {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    margin: auto auto 20px auto;
+    text-decoration: underline;
+    color: #001820;
+    font-size: 45px;
+}
+
+.countrySectionImages {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto auto auto;
+}
+
+.flag1, .flag2, .flag3, .flag4, .flag5, .flag6, .flag7, .flag8 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 50px;
+    margin: auto 30px auto 30px;
+}
+
+.flag1 {
+    background-image: url('media/br.png');
+}
+
+.flag2 {
+    background-image: url('media/ci.png');
+}
+
+.flag3 {
+    background-image: url('media/cl.png');
+}
+
+.flag4 {
+    background-image: url('media/de.png');
+}
+
+.flag5 {
+    background-image: url('media/es.png');
+}
+
+.flag6 {
+    background-image: url('media/fi.png');
+}
+
+.flag7 {
+    background-image: url('media/mx.png');
+}
+
+.flag8 {
+    background-image: url('media/nl.png');
 }
