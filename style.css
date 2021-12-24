@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS';
 }
 
 html {
@@ -86,7 +87,7 @@ html {
 
 .descriptionLogo {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .menuSection {
@@ -173,7 +174,8 @@ html {
     background-size: cover;
     width: 80px;
     height: 50px;
-    margin: auto 30px auto 30px;
+    margin: auto 25px auto auto;
+    box-shadow: 0px 0px 10px 5px #7b7a7a;
 }
 
 .flag1 {
@@ -206,4 +208,63 @@ html {
 
 .flag8 {
     background-image: url('media/nl.png');
+}
+
+/* ------------------------------------------------------------------------ SECOND SECTION --------------------------------------------------- */
+
+.secondSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+
+.secondLeft, .secondRight {
+    border: 1px solid #0037ff;                 /*           Border to delete          */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto auto auto auto;
+}
+
+.secondRight {
+    width: 450px;
+}
+
+.imageSecondSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 0px 10px 10px #bababa;
+}
+
+.titleSecond {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    font-weight: 700;
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.textSecond {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    padding: 5px;
+    margin: 10px auto auto auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+/* ------------------------------------------------------------------------ THIRD SECTION --------------------------------------------------- */
+
+.thirdSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    background-image: url('media/people-computer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
 }
