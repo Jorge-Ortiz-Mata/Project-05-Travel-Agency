@@ -313,6 +313,90 @@ html {
     color: #ffffff;
 }
 
+/*--------------------------------------------------------------------- FOURTH SECTION ---------------------------------------------------------------*/
+
+.fourthSection {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.generalQuestionsTitle {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: auto auto 30px auto;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.divQuestion {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: 30px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    width: 600px;
+}
+
+.question {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.superiorPart {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleQuestion {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px auto 5px 5px;
+    width: auto;
+}
+
+.questionButton {
+    border: 0px;                  /*      Border to delete.      */
+    margin: 3px 3px 3px 3px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #001820;
+    color: #ffffff;
+}
+
+.questionButton:hover {
+    background-color: #ccf2ff;
+    color: #001820;
+}
+
+.answerQuestion {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.showLess {
+    display: none;
+}
+
+.showAll .showMore {
+    display: none;
+}
+
+.showAll .showLess {
+    display: grid;
+}
+
+.showAll .answerQuestion {
+    display: flex;
+}
+
 /*--------------------------------------------------------------------- FOOTERS SECTION ---------------------------------------------------------------*/
 
 .footerSection {

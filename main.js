@@ -48,4 +48,69 @@ thirdButton.innerHTML = `Show more.`;
 
 // ----------------------------------------------------------- FOURTH SECTION -----------------------------------------------------
 
-const fourthSection = document.querySelector ('.fourthSection');
+const questions = document.querySelectorAll ('.question');
+
+console.log (questions);
+
+questions.forEach (function (question) {
+
+    const questionButton = question.querySelector ('.questionButton');
+
+    questionButton.addEventListener ('click', function () {
+
+        questions.forEach (function (newQuestion) {
+
+            if (question !== newQuestion) {
+                newQuestion.classList.remove ('showAll');
+            }
+
+        });
+
+        question.classList.toggle ("showAll");
+
+    });
+
+});
+
+// ----------------------------------------------------------- FIFTH SECTION -----------------------------------------------------
+
+const members = [
+    {
+        name: 'Susana Smith',
+        id: 'SS10HR-02',
+        position: 'HR Manager',
+        email: 'susana-smith@travel-agency.com',
+        description: ' Hello, I am Susana Smith and I am in charge of HR department.'
+    },
+    {
+        name: 'Mark Howard',
+        id: 'MH12MK-02',
+        position: 'Marketing Manager',
+        email: 'mark-howard@travel-agency.com',
+        description: ' Hello, I am Mark Howard and I am in charge of Marketing department.'
+    },
+    {
+        name: 'Tracy Jones',
+        id: 'TJ15SA-02',
+        position: 'Sales Manager ',
+        email: 'tracy-jones@travel-agency.com',
+        description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
+    }
+];
+
+const fifthSection = document.querySelector ('.fifthSection');
+
+const divFifthSection = document.createElement ('div');
+
+const nameMember = document.createElement ('h3');
+const idMember = document.createElement ('p');
+const positionMember = document.createElement ('p');
+const emailMember = document.createElement ('p')
+const descriptionMember = document.createElement ('p');
+
+fifthSection.appendChild (divFifthSection);
+divFifthSection.appendChild (nameMember);
+divFifthSection.appendChild (idMember);
+divFifthSection.appendChild (positionMember);
+divFifthSection.appendChild (emailMember);
+divFifthSection.classList (descriptionMember);
