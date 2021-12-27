@@ -354,7 +354,7 @@ html {
 
 .titleQuestion {
     border: 1px solid #0037ff;                  /*      Border to delete.      */
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
     margin: 5px auto 5px 5px;
     width: auto;
@@ -378,7 +378,7 @@ html {
     border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: none;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .showLess {
@@ -395,6 +395,23 @@ html {
 
 .showAll .answerQuestion {
     display: flex;
+}
+
+/*--------------------------------------------------------------------- FIFTH SECTION ---------------------------------------------------------------*/
+
+.fifthSection {
+    height: 500px;
+    background-color: #d9f6ff;
+}
+
+.fifthSectionTitle {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+}
+
+.divFifthSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: column;
 }
 
 /*--------------------------------------------------------------------- FOOTERS SECTION ---------------------------------------------------------------*/

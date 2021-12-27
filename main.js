@@ -2,25 +2,25 @@
 
 // ----------------------------------------------------------- SECOND SECTION -----------------------------------------------------
 
-const secondSection = document.querySelector ('.secondSection');
+const secondSection = document.querySelector('.secondSection');
 
-const secondLeft = document.createElement ('div');
-const secondRight = document.createElement ('div');
-const imageSecondSection = document.createElement ('img');
-const titleSecond = document.createElement ('h3');
-const textSecond = document.createElement ('p');
+const secondLeft = document.createElement('div');
+const secondRight = document.createElement('div');
+const imageSecondSection = document.createElement('img');
+const titleSecond = document.createElement('h3');
+const textSecond = document.createElement('p');
 
-secondSection.appendChild (secondLeft);
-secondSection.appendChild (secondRight);
-secondLeft.appendChild (imageSecondSection);
-secondRight.appendChild (titleSecond);
-secondRight.appendChild (textSecond);
+secondSection.appendChild(secondLeft);
+secondSection.appendChild(secondRight);
+secondLeft.appendChild(imageSecondSection);
+secondRight.appendChild(titleSecond);
+secondRight.appendChild(textSecond);
 
-secondLeft.classList.add ('secondLeft');
-secondRight.classList.add ('secondRight');
-imageSecondSection.classList.add ('imageSecondSection');
-titleSecond.classList.add ('titleSecond');
-textSecond.classList.add ('textSecond');
+secondLeft.classList.add('secondLeft');
+secondRight.classList.add('secondRight');
+imageSecondSection.classList.add('imageSecondSection');
+titleSecond.classList.add('titleSecond');
+textSecond.classList.add('textSecond');
 
 imageSecondSection.src = 'media/plane.png';
 
@@ -29,47 +29,41 @@ textSecond.innerHTML = `Travel makes you happier. <br>According to a study says 
 
 // ----------------------------------------------------------- THIRD SECTION -----------------------------------------------------
 
-const thirdSection = document.querySelector ('.thirdSection');
+const thirdSection = document.querySelector('.thirdSection');
 
-const thirdDiv = document.createElement ('div');
-const thirdTitle = document.createElement ('h3');
-const thirdButton = document.createElement ('button');
+const thirdDiv = document.createElement('div');
+const thirdTitle = document.createElement('h3');
+const thirdButton = document.createElement('button');
 
-thirdSection.appendChild (thirdDiv);
-thirdDiv.appendChild (thirdTitle);
-thirdDiv.appendChild (thirdButton);
+thirdSection.appendChild(thirdDiv);
+thirdDiv.appendChild(thirdTitle);
+thirdDiv.appendChild(thirdButton);
 
-thirdDiv.classList.add ('thirdDiv');
-thirdTitle.classList.add ('thirdTitle');
-thirdButton.classList.add ('thirdButton');
+thirdDiv.classList.add('thirdDiv');
+thirdTitle.classList.add('thirdTitle');
+thirdButton.classList.add('thirdButton');
 
 thirdTitle.innerHTML = `Do you have questions or doubts about how can you start travelling?`;
 thirdButton.innerHTML = `Show more.`;
 
 // ----------------------------------------------------------- FOURTH SECTION -----------------------------------------------------
 
-const questions = document.querySelectorAll ('.question');
+const questions = document.querySelectorAll('.question');
 
-console.log (questions);
+questions.forEach(function(question) {
 
-questions.forEach (function (question) {
+    const questionButton = question.querySelector('.questionButton');
 
-    const questionButton = question.querySelector ('.questionButton');
+    questionButton.addEventListener('click', function() {
 
-    questionButton.addEventListener ('click', function () {
-
-        questions.forEach (function (newQuestion) {
+        questions.forEach(function(newQuestion) {
 
             if (question !== newQuestion) {
-                newQuestion.classList.remove ('showAll');
+                newQuestion.classList.remove('showAll');
             }
-
         });
-
-        question.classList.toggle ("showAll");
-
+        question.classList.toggle("showAll");
     });
-
 });
 
 // ----------------------------------------------------------- FIFTH SECTION -----------------------------------------------------
@@ -77,40 +71,140 @@ questions.forEach (function (question) {
 const members = [
     {
         name: 'Susana Smith',
+        image: 'media/Maria.jpg',
         id: 'SS10HR-02',
-        position: 'HR Manager',
+        position: 'HR Manager.',
         email: 'susana-smith@travel-agency.com',
         description: ' Hello, I am Susana Smith and I am in charge of HR department.'
     },
     {
         name: 'Mark Howard',
+        image: 'media/Mario.jpg',
         id: 'MH12MK-02',
-        position: 'Marketing Manager',
+        position: 'Marketing Manager.',
         email: 'mark-howard@travel-agency.com',
         description: ' Hello, I am Mark Howard and I am in charge of Marketing department.'
     },
     {
         name: 'Tracy Jones',
+        image: 'media/Sarah.jpg',
         id: 'TJ15SA-02',
-        position: 'Sales Manager ',
+        position: 'Sales Manager.',
+        email: 'tracy-jones@travel-agency.com',
+        description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
+    },
+    {
+        name: 'Joseph Phillips',
+        image: 'media/Joseph.jpg',
+        id: 'JP15WV-22',
+        position: 'Sales Engineer.',
         email: 'tracy-jones@travel-agency.com',
         description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
     }
 ];
 
-const fifthSection = document.querySelector ('.fifthSection');
+let numberMember = 0;
 
-const divFifthSection = document.createElement ('div');
+const fifthSection = document.querySelector('.fifthSection');
 
-const nameMember = document.createElement ('h3');
-const idMember = document.createElement ('p');
-const positionMember = document.createElement ('p');
-const emailMember = document.createElement ('p')
-const descriptionMember = document.createElement ('p');
+const fifthSectionTitle = document.createElement('h2');
+const divFifthSection = document.createElement('div');
+const divFifthButtons = document.createElement('div');
 
-fifthSection.appendChild (divFifthSection);
-divFifthSection.appendChild (nameMember);
-divFifthSection.appendChild (idMember);
-divFifthSection.appendChild (positionMember);
-divFifthSection.appendChild (emailMember);
-divFifthSection.classList (descriptionMember);
+const nameMember = document.createElement('h3');
+const imageMember = document.createElement('img');
+const idMember = document.createElement('p');
+const positionMember = document.createElement('p');
+const emailMember = document.createElement('p')
+const descriptionMember = document.createElement('p');
+
+const fifthFirstButton = document.createElement('button');
+const fifthSecondButton = document.createElement('button');
+const fifthThirdButton = document.createElement('button');
+
+fifthSection.appendChild(fifthSectionTitle);
+fifthSection.appendChild(divFifthSection);
+fifthSection.appendChild(divFifthButtons);
+divFifthSection.appendChild(nameMember);
+divFifthSection.appendChild(imageMember);
+divFifthSection.appendChild(idMember);
+divFifthSection.appendChild(positionMember);
+divFifthSection.appendChild(emailMember);
+divFifthSection.appendChild(descriptionMember);
+divFifthButtons.appendChild(fifthFirstButton);
+divFifthButtons.appendChild(fifthSecondButton);
+divFifthButtons.appendChild(fifthThirdButton);
+
+fifthSectionTitle.classList.add('fifthSectionTitle');
+divFifthSection.classList.add('divFifthSection');
+divFifthButtons.classList.add('divFifthButtons');
+nameMember.classList.add('nameMember');
+imageMember.classList.add('imageMember');
+idMember.classList.add('idMember');
+positionMember.classList.add('positionMember');
+emailMember.classList.add('emailMember');
+descriptionMember.classList.add('descriptionMember');
+fifthFirstButton.classList.add('fifthFirstButton');
+fifthSecondButton.classList.add('fifthSecondButton');
+fifthThirdButton.classList.add('fifthThirdButton');
+
+fifthSectionTitle.innerHTML = `Meet our staff.`;
+fifthFirstButton.innerHTML = `Show next.`;
+fifthSecondButton.innerHTML = `Show previous.`;
+fifthThirdButton.innerHTML = `Random.`;
+
+nameMember.innerHTML = `${members[numberMember].name}`;
+imageMember.src = members[numberMember].image;
+idMember.innerHTML = `${members[numberMember].id}`;
+positionMember.innerHTML = `${members[numberMember].position}`;
+emailMember.innerHTML = `${members[numberMember].email}`;
+descriptionMember.innerHTML = `${members[numberMember].description}`;
+
+showNextMember = () => {
+
+    if (numberMember < members.length) {
+        numberMember++;
+    }
+    else {
+        numberMember = 0;
+    }
+    nameMember.innerHTML = `${members[numberMember].name}`;
+    imageMember.src = members[numberMember].image;
+    idMember.innerHTML = `${members[numberMember].id}`;
+    positionMember.innerHTML = `${members[numberMember].position}`;
+    emailMember.innerHTML = `${members[numberMember].email}`;
+    descriptionMember.innerHTML = `${members[numberMember].description}`;
+}
+
+showPreviousMember = () => {
+
+    if (numberMember < 0){
+        numberMember = members.length - 1;
+    }
+    else {
+        numberMember--;
+    }
+    
+    numberMember--;
+    nameMember.innerHTML = `${members[numberMember].name}`;
+    imageMember.src = members[numberMember].image;
+    idMember.innerHTML = `${members[numberMember].id}`;
+    positionMember.innerHTML = `${members[numberMember].position}`;
+    emailMember.innerHTML = `${members[numberMember].email}`;
+    descriptionMember.innerHTML = `${members[numberMember].description}`;
+}
+
+randomMember = () => {
+    let x = Marth.floor(Math.random() * members.length);
+    numberMember = x;
+    nameMember.innerHTML = `${members[numberMember].name}`;
+    imageMember.src = members[numberMember].image;
+    idMember.innerHTML = `${members[numberMember].id}`;
+    positionMember.innerHTML = `${members[numberMember].position}`;
+    emailMember.innerHTML = `${members[numberMember].email}`;
+    descriptionMember.innerHTML = `${members[numberMember].description}`;
+}
+
+fifthFirstButton.addEventListener ('click', showNextMember);
+fifthSecondButton.addEventListener ('click', showPreviousMember);
+fifthThirdButton.addEventListener ('click', randomMember);
