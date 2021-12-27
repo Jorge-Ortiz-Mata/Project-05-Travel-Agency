@@ -162,12 +162,13 @@ descriptionMember.innerHTML = `${members[numberMember].description}`;
 
 showNextMember = () => {
 
-    if (numberMember < members.length) {
-        numberMember++;
-    }
-    else {
+    if (numberMember === (members.length-1)) {
         numberMember = 0;
     }
+    else {
+        numberMember++;
+    }
+
     nameMember.innerHTML = `${members[numberMember].name}`;
     imageMember.src = members[numberMember].image;
     idMember.innerHTML = `${members[numberMember].id}`;
@@ -178,14 +179,15 @@ showNextMember = () => {
 
 showPreviousMember = () => {
 
-    if (numberMember < 0){
-        numberMember = members.length - 1;
+    if (numberMember == 0){
+        numberMember = (members.length - 1);
     }
     else {
         numberMember--;
     }
-    
-    numberMember--;
+
+    console.log (numberMember);
+
     nameMember.innerHTML = `${members[numberMember].name}`;
     imageMember.src = members[numberMember].image;
     idMember.innerHTML = `${members[numberMember].id}`;
@@ -195,8 +197,12 @@ showPreviousMember = () => {
 }
 
 randomMember = () => {
-    let x = Marth.floor(Math.random() * members.length);
+
+    let x = Math.floor(Math.random() * members.length);
     numberMember = x;
+
+    console.log (numberMember);
+
     nameMember.innerHTML = `${members[numberMember].name}`;
     imageMember.src = members[numberMember].image;
     idMember.innerHTML = `${members[numberMember].id}`;
