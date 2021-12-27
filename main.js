@@ -1,4 +1,20 @@
 
+// ----------------------------------------------------------- NAV SECTION -----------------------------------------------------
+
+const firstPart = document.querySelector ('.firstPart');
+const exploreMoreButton = document.querySelector ('.exploreMoreButton');
+const firstSection = document.querySelector ('.firstSecion');
+
+exploreMoreFunction = () => {
+
+    window.scrollTo ({
+        left: 0,
+        top: firstSection.offsetTop - firstPart.getBoundingClientRect().height,
+    });
+
+}
+
+exploreMoreButton.addEventListener ('click', exploreMoreFunction);
 
 // ----------------------------------------------------------- SECOND SECTION -----------------------------------------------------
 
@@ -70,7 +86,7 @@ questions.forEach(function(question) {
 
 const members = [
     {
-        name: 'Susana Smith',
+        name: 'Susana Smith.',
         image: 'media/Maria.jpg',
         id: 'SS10HR-02',
         position: 'HR Manager.',
@@ -78,7 +94,7 @@ const members = [
         description: ' Hello, I am Susana Smith and I am in charge of HR department.'
     },
     {
-        name: 'Mark Howard',
+        name: 'Mark Howard.',
         image: 'media/Mario.jpg',
         id: 'MH12MK-02',
         position: 'Marketing Manager.',
@@ -86,7 +102,7 @@ const members = [
         description: ' Hello, I am Mark Howard and I am in charge of Marketing department.'
     },
     {
-        name: 'Tracy Jones',
+        name: 'Tracy Jones.',
         image: 'media/Sarah.jpg',
         id: 'TJ15SA-02',
         position: 'Sales Manager.',
@@ -94,11 +110,11 @@ const members = [
         description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
     },
     {
-        name: 'Joseph Phillips',
+        name: 'Joseph Phillips.',
         image: 'media/Joseph.jpg',
         id: 'JP15WV-22',
         position: 'Sales Engineer.',
-        email: 'tracy-jones@travel-agency.com',
+        email: 'joseph-phillips@travel-agency.com',
         description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
     }
 ];
@@ -107,6 +123,7 @@ let numberMember = 0;
 
 const fifthSection = document.querySelector('.fifthSection');
 
+const fifthSectionDiv = document.createElement ('div');
 const fifthSectionTitle = document.createElement('h2');
 const divFifthSection = document.createElement('div');
 const divFifthButtons = document.createElement('div');
@@ -122,19 +139,21 @@ const fifthFirstButton = document.createElement('button');
 const fifthSecondButton = document.createElement('button');
 const fifthThirdButton = document.createElement('button');
 
-fifthSection.appendChild(fifthSectionTitle);
-fifthSection.appendChild(divFifthSection);
-fifthSection.appendChild(divFifthButtons);
+fifthSection.appendChild(fifthSectionDiv);
+fifthSectionDiv.appendChild(fifthSectionTitle);
+fifthSectionDiv.appendChild(divFifthSection);
+fifthSectionDiv.appendChild(divFifthButtons);
 divFifthSection.appendChild(nameMember);
 divFifthSection.appendChild(imageMember);
 divFifthSection.appendChild(idMember);
 divFifthSection.appendChild(positionMember);
 divFifthSection.appendChild(emailMember);
 divFifthSection.appendChild(descriptionMember);
-divFifthButtons.appendChild(fifthFirstButton);
 divFifthButtons.appendChild(fifthSecondButton);
 divFifthButtons.appendChild(fifthThirdButton);
+divFifthButtons.appendChild(fifthFirstButton);
 
+fifthSectionDiv.classList.add('fifthSectionDiv');
 fifthSectionTitle.classList.add('fifthSectionTitle');
 divFifthSection.classList.add('divFifthSection');
 divFifthButtons.classList.add('divFifthButtons');
@@ -149,8 +168,8 @@ fifthSecondButton.classList.add('fifthSecondButton');
 fifthThirdButton.classList.add('fifthThirdButton');
 
 fifthSectionTitle.innerHTML = `Meet our staff.`;
-fifthFirstButton.innerHTML = `Show next.`;
-fifthSecondButton.innerHTML = `Show previous.`;
+fifthFirstButton.innerHTML = `Next.`;
+fifthSecondButton.innerHTML = `Previous.`;
 fifthThirdButton.innerHTML = `Random.`;
 
 nameMember.innerHTML = `${members[numberMember].name}`;
@@ -214,3 +233,19 @@ randomMember = () => {
 fifthFirstButton.addEventListener ('click', showNextMember);
 fifthSecondButton.addEventListener ('click', showPreviousMember);
 fifthThirdButton.addEventListener ('click', randomMember);
+
+
+// ----------------------------------------------------------- FIX MENU. -----------------------------------------------------
+
+window.addEventListener ('scroll', function () {
+
+    let scrollValue = window.pageYOffset;
+
+    if (scrollValue > 90){
+        firstPart.classList.add ('fixedMenu');
+    }
+
+    else if (scrollValue < 90) {
+        firstPart.classList.remove ('fixedMenu');
+    }
+});

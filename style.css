@@ -108,7 +108,125 @@ html {
 }
 
 .primaryMenu li a {
-    color: #ffffff; 
+    color: #ffffff;
+    margin: auto auto auto auto; 
+}
+
+.primaryMenu li a:hover {
+    color: #06a1d5; 
+}
+
+.primaryMenu li .showSideBar {
+    border: none;
+    background: transparent;
+}
+
+.primaryMenu li .showSideBar i {
+    color: #ffffff;
+    zoom: 140%;
+}
+
+.primaryMenu li .showSideBar i:hover {
+    color: #06a1d5;
+    zoom: 140%;
+}
+
+/* ------------ First Part Fixed Menu--------------- */
+
+.fixedMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    background-color: #001820;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation-name: fixedMenuAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fixedMenuAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fixedMenu .logoSection {
+    border: 1px solid #04ff00;                  /*      Border to delete.      */
+    display: flex;
+}
+
+.fixedMenu .imageLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    background-image: url('media/YWB-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 50px;
+}
+
+.fixedMenu .informationLogo {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.fixedMenu .titleLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin-top: auto;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.fixedMenu .descriptionLogo {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin-bottom: auto;
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.fixedMenu .titleLogo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fixedMenu .descriptionLogo {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.fixedMenu .menuSection {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+}
+
+.fixedMenu .primaryMenu {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    list-style: none;
+    display: flex;
+    margin: auto 35px auto auto;
+}
+
+.fixedMenu .primaryMenu li {
+    margin: 10px 50px 10px auto;
+    font-size: 20px;
+}
+
+.fixedMenu .primaryMenu li a {
+    color: #ffffff;
+    margin: auto auto auto auto; 
+}
+
+.fixedMenu .primaryMenu li a:hover {
+    color: #06a1d5; 
 }
 
 
@@ -400,22 +518,151 @@ html {
 /*--------------------------------------------------------------------- FIFTH SECTION ---------------------------------------------------------------*/
 
 .fifthSection {
-    height: 500px;
-    background-color: #d9f6ff;
+    height: 650px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fifthSectionDiv {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    border-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 700px;
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 10px 5px #0018206f;
+    background-color: #00182009;
 }
 
 .fifthSectionTitle {
     border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: auto auto 10px auto;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .divFifthSection {
     border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
+    margin: 10px auto 10px auto;
+}
+
+.divFifthButtons {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    margin: 10px auto auto auto;
+}
+
+.nameMember {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    padding: 5px;
+    border-radius: 60px;
+    margin: auto auto auto auto;
+}
+
+.nameMember:hover {
+    animation: textAnimation;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
 }
 
 .imageMember {
+    margin: 10px auto 10px auto;
     width: 100px;
+    height: 120px;
+    border-radius: 60px;
+    background-position: center;
+    object-fit: cover;
+}
+
+.imageMember:hover {
+    animation: imgAnimation;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imgAnimation {
+    0% {
+        width: 100px;
+        height: 120px;
+    }
+    100% {
+        width: 110px;
+        height: 130px;
+        box-shadow: 0px 0px 10px 5px #0018206d;
+    }
+}
+
+.idMember {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 5px auto auto auto;
+}
+
+.positionMember {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 60px;
+    margin: 5px auto auto auto;
+}
+
+.emailMember {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px;
+    text-decoration: underline;
+    border-radius: 60px;
+    margin: 5px auto 5px auto;
+}
+
+.descriptionMember {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 5px auto 5px auto;
+
+}
+
+@keyframes textAnimation {
+    0% {
+        font-size: auto;
+    }
+    100% {
+        font-size: 130%;
+        box-shadow: 0px 0px 10px 5px #0018206d;
+    }
+}
+
+.fifthFirstButton, .fifthSecondButton, .fifthThirdButton {
+    border: 0px;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #0018203b;
+    background-color: #ffffff;
+}
+
+.fifthFirstButton:hover, .fifthSecondButton:hover, .fifthThirdButton:hover {
+    background-color: #001820;
+    color: #ffffff;
 }
 
 /*--------------------------------------------------------------------- FOOTERS SECTION ---------------------------------------------------------------*/
