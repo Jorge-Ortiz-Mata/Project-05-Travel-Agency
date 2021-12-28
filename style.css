@@ -12,7 +12,6 @@ html {
 /* ------------------------------------------------------------------------ NAV SECTION --------------------------------------------------- */
 
 .navSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     height: 710px;
     display: flex;
     flex-direction: column;
@@ -35,7 +34,6 @@ html {
 /* ------------ First Part --------------- */
 
 .firstPart {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,12 +41,10 @@ html {
 }
 
 .logoSection {
-    border: 1px solid #04ff00;                  /*      Border to delete.      */
     display: flex;
 }
 
 .imageLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     background-image: url('media/YWB-white.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -59,21 +55,18 @@ html {
 }
 
 .informationLogo {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
     height: auto;
 }
 
 .titleLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin-top: auto;
     margin-bottom: 5px;
     color: #ffffff;
 }
 
 .descriptionLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin-bottom: auto;
     margin-top: 0px;
     color: #ffffff;
@@ -90,12 +83,10 @@ html {
 }
 
 .menuSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
 }
 
 .primaryMenu {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     list-style: none;
     display: flex;
     margin: auto 35px auto auto;
@@ -157,12 +148,10 @@ html {
 }
 
 .fixedMenu .logoSection {
-    border: 1px solid #04ff00;                  /*      Border to delete.      */
     display: flex;
 }
 
 .fixedMenu .imageLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     background-image: url('media/YWB-white.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -172,21 +161,18 @@ html {
 }
 
 .fixedMenu .informationLogo {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
     height: auto;
 }
 
 .fixedMenu .titleLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin-top: auto;
     margin-bottom: 5px;
     color: #ffffff;
 }
 
 .fixedMenu .descriptionLogo {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin-bottom: auto;
     margin-top: 0px;
     color: #ffffff;
@@ -203,12 +189,10 @@ html {
 }
 
 .fixedMenu .menuSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
 }
 
 .fixedMenu .primaryMenu {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     list-style: none;
     display: flex;
     margin: auto 35px auto auto;
@@ -232,7 +216,6 @@ html {
 /* ------------ Second Part --------------- */
 
 .secondPart {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
     margin: auto auto auto auto;
@@ -240,7 +223,6 @@ html {
 }
 
 .titleCompany {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: auto auto auto auto;
     text-align: center;
     color: #ffffff;
@@ -248,7 +230,6 @@ html {
 }
 
 .sloganCompany{
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin: auto auto auto auto;
     text-align: center;
     color: #ffffff;
@@ -275,7 +256,6 @@ html {
 /* ------------------------------------------------------------------------ SIDEBAR MENU. --------------------------------------------------- */
 
 .sideBar {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     position: fixed;
     top: 0;
     left: 0;
@@ -305,7 +285,6 @@ html {
 }
 
 .principalSection {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     background-color: #0018203d;
     display: flex;
     justify-content: space-between;
@@ -313,7 +292,6 @@ html {
 }
 
 .logoInfoSidebar {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
 }
 
@@ -328,7 +306,6 @@ html {
 }
 
 .informationLogoSidebar {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
     margin: auto auto auto auto;
@@ -351,7 +328,6 @@ html {
 }
 
 .secondarySection {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     background-color: #e7e6e6;
     display: flex;
     flex-direction: column;
@@ -359,18 +335,15 @@ html {
 }
 
 .sideBarMenu {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
 }
 
 .sideBarMenu li {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     height: 20%;
     text-align: center;
     display: flex;
 }
 
 .sideBarMenu li a {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: auto auto auto 10px;
     color: #001820;
     text-decoration: none;
@@ -378,7 +351,6 @@ html {
 }
 
 .sideBarMenu li:hover {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: auto auto auto auto;
     background-color: #ffffff;
     text-decoration: none;
@@ -412,14 +384,12 @@ html {
 /* ------------------------------------------------------------------------ FIRST SECTION --------------------------------------------------- */
 
 .firstSecion {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     height: 500px;
     display: flex;
     flex-direction: column;
 } 
 
 .countryTitle {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     margin: auto auto 20px auto;
     text-decoration: underline;
@@ -428,7 +398,6 @@ html {
 }
 
 .countrySectionImages {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: row;
     margin: 20px auto auto auto;
@@ -479,14 +448,12 @@ html {
 /* ------------------------------------------------------------------------ SECOND SECTION --------------------------------------------------- */
 
 .secondSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: row;
     height: 700px;
 }
 
 .secondLeft, .secondRight {
-    border: 1px solid #0037ff;                 /*           Border to delete          */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -498,13 +465,11 @@ html {
 }
 
 .imageSecondSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     width: 400px;
     height: 300px;
 }
 
 .titleSecond {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     font-weight: 700;
     padding: 10px;
     font-size: 35px;
@@ -512,7 +477,6 @@ html {
 }
 
 .textSecond {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     padding: 5px;
     margin: 10px auto auto auto;
     text-align: center;
@@ -525,7 +489,6 @@ html {
 /* ------------------------------------------------------------------------ THIRD SECTION --------------------------------------------------- */
 
 .thirdSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     background-image: url('media/people-computer.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -535,7 +498,6 @@ html {
 }
 
 .thirdDiv {
-    border: 1px solid #0037ff;                 /*           Border to delete          */
     display: flex;
     flex-direction: column;
     margin: auto auto auto 200px;
@@ -544,7 +506,6 @@ html {
 }
 
 .thirdTitle {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     font-size: 30px;
     text-align: center;
     margin: auto auto auto auto;
@@ -570,7 +531,6 @@ html {
 /*--------------------------------------------------------------------- FOURTH SECTION ---------------------------------------------------------------*/
 
 .fourthSection {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -578,14 +538,12 @@ html {
 }
 
 .generalQuestionsTitle {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: auto auto 30px auto;
     font-size: 40px;
     font-weight: 700;
 }
 
 .divQuestion {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: 30px auto auto auto;
     display: flex;
     flex-direction: column;
@@ -594,20 +552,17 @@ html {
 }
 
 .question {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .superiorPart {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     justify-content: space-between;
 }
 
 .titleQuestion {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     font-weight: 800;
     font-size: 20px;
     margin: 5px auto 5px 5px;
@@ -615,7 +570,7 @@ html {
 }
 
 .questionButton {
-    border: 0px;                  /*      Border to delete.      */
+    border: 0px;                 
     margin: 3px 3px 3px 3px;
     padding: 10px;
     border-radius: 10px;
@@ -629,7 +584,6 @@ html {
 }
 
 .answerQuestion {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: none;
     font-size: 17px;
     font-weight: 500;
@@ -661,7 +615,6 @@ html {
 }
 
 .fifthSectionDiv {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     border-radius: 75px;
     display: flex;
     flex-direction: column;
@@ -673,26 +626,22 @@ html {
 }
 
 .fifthSectionTitle {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     margin: auto auto 10px auto;
     font-size: 30px;
     font-weight: 900;
 }
 
 .divFifthSection {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     display: flex;
     flex-direction: column;
     margin: 10px auto 10px auto;
 }
 
 .divFifthButtons {
-    border: 1px solid #0037ff;                  /*      Border to delete.      */
     margin: 10px auto auto auto;
 }
 
 .nameMember {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     padding: 5px;
     border-radius: 60px;
@@ -733,7 +682,6 @@ html {
 }
 
 .idMember {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -743,7 +691,6 @@ html {
 }
 
 .positionMember {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     font-size: 17px;
     font-weight: 700;
@@ -753,7 +700,6 @@ html {
 }
 
 .emailMember {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     font-size: 13px;
     font-weight: 300;
@@ -764,7 +710,6 @@ html {
 }
 
 .descriptionMember {
-    border: 1px solid #ff0000;                  /*      Border to delete.      */
     text-align: center;
     font-size: 14px;
     font-weight: 300;
@@ -844,7 +789,7 @@ html {
 }
 
 .sixthCountryAmerica, .sixthCountryEurope, .sixthCountryAsia {
-    margin: 2px;
+    margin: 10px;
     padding: 15px;
     font-size: 15px;
     border-radius: 25px;

@@ -128,7 +128,7 @@ const members = [
         id: 'JP15WV-22',
         position: 'Sales Engineer.',
         email: 'joseph-phillips@travel-agency.com',
-        description: ' Hello, I am Tracy Jones and I am in charge of Sales department.'
+        description: ' Hello, I am Joseph Phillips and I am working in Sales department.'
     }
 ];
 
