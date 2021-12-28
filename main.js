@@ -62,6 +62,19 @@ thirdButton.classList.add('thirdButton');
 thirdTitle.innerHTML = `Do you have questions or doubts about how can you start travelling?`;
 thirdButton.innerHTML = `Show more.`;
 
+const fourthSection = document.querySelector('.fourthSection');
+
+showQuestionsSection = () => {
+
+    window.scrollTo ({
+        left: 0,
+        top: fourthSection.offsetTop - firstPart.getBoundingClientRect().height,
+    });
+
+}
+
+thirdButton.addEventListener('click', showQuestionsSection);
+
 // ----------------------------------------------------------- FOURTH SECTION -----------------------------------------------------
 
 const questions = document.querySelectorAll('.question');
@@ -249,6 +262,85 @@ window.addEventListener ('scroll', function () {
         firstPart.classList.remove ('fixedMenu');
     }
 });
+
+// ----------------------------------------------------------- SIXTH SECTION. -----------------------------------------------------
+
+const sixthContinentAll = document.querySelector('.sixthContinentAll');
+const sixthContinentAmerica = document.querySelector('.sixthContinentAmerica');
+const sixthContinentEurope = document.querySelector('.sixthContinentEurope');
+const sixthContinentAsia = document.querySelector('.sixthContinentAsia');
+
+const CountriesAmerica = document.querySelectorAll('.sixthCountryAmerica');
+const CountriesEurope = document.querySelectorAll('.sixthCountryEurope');
+const CountriesAsia = document.querySelectorAll('.sixthCountryAsia');
+
+sixthAllFunction = () => {
+
+    CountriesAmerica.forEach(function(CountryAmerica) {
+        CountryAmerica.classList.remove('hideCountry');
+    });
+    
+    CountriesEurope.forEach(function(CountryEurope) {
+        CountryEurope.classList.remove('hideCountry')
+    });
+
+    CountriesAsia.forEach(function(CountryAsia) {
+        CountryAsia.classList.remove('hideCountry');
+    });
+
+}
+
+sixthAmericaFunction = () => {
+
+    CountriesAmerica.forEach(function(CountryAmerica) {
+        CountryAmerica.classList.remove('hideCountry');
+    });
+
+    CountriesEurope.forEach(function(CountryEurope) {
+        CountryEurope.classList.add('hideCountry')
+    });
+
+    CountriesAsia.forEach(function(CountryAsia) {
+        CountryAsia.classList.add('hideCountry');
+    });
+
+}
+
+sixthEuropeFunction = () => {
+
+    CountriesEurope.forEach(function(CountryEurope) {
+        CountryEurope.classList.remove('hideCountry')
+    });
+
+    CountriesAmerica.forEach(function(CountryAmerica) {
+        CountryAmerica.classList.add('hideCountry');
+    });
+
+    CountriesAsia.forEach(function(CountryAsia) {
+        CountryAsia.classList.add('hideCountry');
+    });
+
+}
+
+sixthAsiaFunction = () => {
+
+    CountriesAsia.forEach(function(CountryAsia) {
+        CountryAsia.classList.remove('hideCountry');
+    });
+
+    CountriesAmerica.forEach(function(CountryAmerica) {
+        CountryAmerica.classList.add('hideCountry');
+    });
+
+    CountriesEurope.forEach(function(CountryEurope) {
+        CountryEurope.classList.add('hideCountry')
+    });
+}
+
+sixthContinentAll.addEventListener('click', sixthAllFunction);
+sixthContinentAmerica.addEventListener('click', sixthAmericaFunction);
+sixthContinentEurope.addEventListener('click', sixthEuropeFunction);
+sixthContinentAsia.addEventListener('click', sixthAsiaFunction);
 
 // ----------------------------------------------------------- SIDE BAR. -----------------------------------------------------
 

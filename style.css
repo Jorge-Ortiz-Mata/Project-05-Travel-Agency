@@ -1,6 +1,4 @@
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -282,9 +280,24 @@ html {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 300px;
     height: 100%;
     display: none;
+    animation: showSideBar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showSideBar {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        width: 300px;
+    }
 }
 
 .shoWideBar {
@@ -339,7 +352,7 @@ html {
 
 .secondarySection {
     border: 1px solid #0037ff;                  /*      Border to delete.      */
-    background-color: #b1afaf;
+    background-color: #e7e6e6;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -377,7 +390,7 @@ html {
 
 @keyframes sideBarAnimation {
     0% {
-        opacity: 0;
+        opacity: 0.2;
     }
     100% {
         opacity: 1;
@@ -786,6 +799,98 @@ html {
 .fifthFirstButton:hover, .fifthSecondButton:hover, .fifthThirdButton:hover {
     background-color: #001820;
     color: #ffffff;
+}
+
+/* --------------------------------------------------------------------- SIXTH SECTION. -------------------------------------------------------------- */
+
+.sixthSection {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.sixthTitle {
+    margin: auto auto 20px auto;
+    font-size: 30px;
+}
+
+.places {
+    margin: 20px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.sixthAbovePart {
+    display: flex;
+    margin: 2px;
+    margin: 5px auto 5px auto;
+}
+
+.sixthContinentAll, .sixthContinentAmerica, .sixthContinentEurope, .sixthContinentAsia {
+    border: 0px;
+    font-size: 18px;
+    margin: auto 15px auto 15px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px #00182040;
+}
+
+.sixthBelowPart {
+    margin: auto auto auto auto;
+    display: flex;
+}
+
+.sixthCountryAmerica, .sixthCountryEurope, .sixthCountryAsia {
+    margin: 2px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px #00182040;
+}
+
+.sixthContinentAll:hover, .sixthContinentAmerica:hover, .sixthContinentEurope:hover, .sixthContinentAsia:hover, .sixthCountryAmerica:hover, .sixthCountryEurope:hover, .sixthCountryAsia:hover {
+    color: #ffffff;
+    background-color: #001820;
+    animation-name: sixthSection;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sixthSection {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hideCountry {
+    display: none;
+}
+
+/* --------------------------------------------------------------------- SEVENTH SECTION. -------------------------------------------------------------- */
+
+.seventhSection {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.seventhTitle {
+    font-size: 25px;
+    font-weight: 900;
+    margin: auto auto 20px auto;
+}
+
+.seventhText {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 100px auto 100px;
 }
 
 /*--------------------------------------------------------------------- FOOTERS SECTION ---------------------------------------------------------------*/
