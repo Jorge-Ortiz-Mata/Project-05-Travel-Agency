@@ -3,11 +3,11 @@
 
 Information:
 
-> Name: **Project-2-Books-Javascript**;
-> Author: Jorge Ortiz Mata;
-> Email: ortiz.mata.jorge@gmail.com;
-> Location: San Luis Potosí S.L.P. México;
-> Cellphone number: +52 (444) 576 3034;
+1. Name: **Project-2-Books-Javascript**
+2. Author: Jorge Ortiz Mata
+3. Email: ortiz.mata.jorge@gmail.com
+4. Location: San Luis Potosí S.L.P. México
+5. Cellphone number: +52 (444) 576 3034
 
 Description: 
 
