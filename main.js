@@ -249,3 +249,20 @@ window.addEventListener ('scroll', function () {
         firstPart.classList.remove ('fixedMenu');
     }
 });
+
+// ----------------------------------------------------------- SIDE BAR. -----------------------------------------------------
+
+const showSideBar = document.querySelector('.showSideBar');
+const closeButtonSidebar = document.querySelector('.closeButtonSidebar');
+const sideBar = document.querySelector('.sideBar');
+
+showSideBarFunction = () => {
+    sideBar.classList.add('shoWideBar');
+}
+
+closeSideBarFunction = () => {
+    sideBar.classList.remove('shoWideBar');
+}
+
+showSideBar.addEventListener('click', showSideBarFunction);
+closeButtonSidebar.addEventListener('click', closeSideBarFunction);

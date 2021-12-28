@@ -57,6 +57,7 @@ html {
     background-size: cover;
     width: 80px;
     height: 50px;
+    margin: 2px;
 }
 
 .informationLogo {
@@ -271,6 +272,128 @@ html {
 .exploreMoreButton:hover {
     background-color: #429ebd;
     color: #ffffff;
+}
+
+/* ------------------------------------------------------------------------ SIDEBAR MENU. --------------------------------------------------- */
+
+.sideBar {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 300px;
+    height: 100%;
+    display: none;
+}
+
+.shoWideBar {
+    display: inline-block;
+}
+
+.principalSection {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    background-color: #0018203d;
+    display: flex;
+    justify-content: space-between;
+    background-color: #001820;
+}
+
+.logoInfoSidebar {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    display: flex;
+}
+
+.imageSidebarLogo {
+    background-image: url('media/YWB-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 40px;
+    margin: 3px;
+}
+
+.informationLogoSidebar {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto auto;
+}
+
+.titleLogoSidebar {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.descriptionLogoSidebar {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.buttonSidebar {
+    margin: auto 10px auto auto;
+}
+
+.secondarySection {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    background-color: #b1afaf;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sideBarMenu {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+}
+
+.sideBarMenu li {
+    border: 1px solid #0037ff;                  /*      Border to delete.      */
+    height: 20%;
+    text-align: center;
+    display: flex;
+}
+
+.sideBarMenu li a {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: auto auto auto 10px;
+    color: #001820;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.sideBarMenu li:hover {
+    border: 1px solid #ff0000;                  /*      Border to delete.      */
+    margin: auto auto auto auto;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    animation-name: sideBarAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sideBarAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.closeButtonSidebar {
+    border: 0px;
+    background-color: transparent;
+    color: #ffffff;
+    zoom: 150%;
+    margin: auto 5px auto auto;
+}
+
+.closeButtonSidebar:hover {
+    color: #ff0000;
 }
 
 /* ------------------------------------------------------------------------ FIRST SECTION --------------------------------------------------- */
